@@ -1,0 +1,194 @@
+.hed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(244, 51, 151, 0.8);
+  position: sticky;
+  top: 0px;
+ z-index: 2;
+  
+}
+
+.menu-1 {
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 0px;
+}
+
+.menu-1 a{
+  margin-right: 0%;
+  margin-left: 10%;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  position: relative;
+  animation: animi 4s 2 alternate;
+  box-shadow: 0 5px #999;
+  border-radius: 10px;
+}
+ /* @keyframes animi{
+0% {left:0px; top: 0px;}
+25% {left:100px; top: 0px;}
+50% {left:100px; top: 100px;}
+75% {left:0px; top: 100px;}
+100% {left:0px; top: 0px;} 
+0%{background-color: aqua; }
+25%{background-color: blue;}
+50%{background-color: blueviolet;}
+100%{background-color: chartreuse;}
+}  */
+
+.active{
+background-color: lightgreen;
+}
+.menu-1 a:hover:not(.active){
+  background-color: rgba(8, 16, 165, 0.927);
+}
+
+.fl1{
+ 
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flx {
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.fl1:hover {
+  background-color: rgba(212, 125, 212, 0.824);
+  cursor: pointer;
+}
+
+.side img {
+  float: right;
+  width: 40%;
+  transition:transform 2s; 
+}
+
+.side img:hover{
+  transform: rotatex(360deg);
+}
+.side {
+  line-height: 35px;
+  overflow: auto;
+}
+.info{
+  clear: left;
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: white;
+}
+@media screen and (max-width:800px) {
+  .flx,
+  .side, .info{
+    display: flex;
+    flex-direction:column;
+  }
+}
+
+.a {
+  color: rgba(244, 51, 151, 0.8);
+}
+
+.b {
+  color: rgba(8, 16, 165, 0.927);
+}
+
+.table {
+float: left;
+}
+
+.table ul {
+  list-style: none;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+li:hover {
+  color: rgba(244, 51, 151, 0.8);
+}
+
+.second {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+.images img{
+  width: 100px;
+  height: 100px;
+  
+}
+
+.add a{
+text-decoration: none;
+line-height: 30px;
+color: white;
+}
+.add li{
+  list-style: none;
+}
+.dd1, .dd2{
+position: relative;
+display: inline-block;
+}
+.down img, .dr img, .op img{
+  width: 600px;
+  height: 250px;
+}
+.down, .dr, .op{
+  position:absolute;
+  display: none;
+  min-width: 160px;
+  box-shadow: 0px 16px 18px 0px rgba(67, 67, 67, 0.15);
+  text-align: center;
+  background-color: gray;
+  width: 600px;
+}
+.fl1:hover .down{
+  display: block;
+}
+.dd1:hover .dr{
+  display: block;
+}
+.dd2:hover .op{
+  display: block;
+  transform: translate(-50%);
+}
+*{
+  box-sizing: border-box;
+}
+.paintings img{
+  width: 50%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  float: left;
+  shape-outside:polygon(55% 0%, 105% 50%, 55% 100%, 5% 50%);
+}
+.paintings img:hover{
+  transform: scaleX(-1);
+}
+.iteam1{ grid-area: header;}
+.iteam2{ grid-area: menu; height: 400px;}
+.iteam3{ grid-area: main; height: 300px;}
+.iteam4{ grid-area: right; height: 300px;}
+.iteam5{ grid-area: float; height: 100px;}
+
+.container{
+  display: grid;
+  grid-template-areas: 'header header header header header header'
+  'menu main main main main right'
+  'menu float float float float float';
+  text-align: center;
+  background-color: rgba(8, 16, 165, 0.927);
+  gap: 8px;
+}
+.container > div{
+  background-color:rgba(212, 125, 212, 0.824);
+  padding: 20px;
+  color: white;
+}
