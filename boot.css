@@ -1,0 +1,71 @@
+.carousel-item img{
+    height: 800px;
+}
+.two{
+    background-image: url(https://i.pinimg.com/236x/e7/8e/b1/e78eb1d60e8e053d7c5afe5a7d557eb6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three{
+    background-image: url(https://img.freepik.com/free-photo/abstract-extruded-voronoi-blocks-background-minimal-light-clean-corporate-wall-3d-geometric-surface-illustration-polygonal-elements-displacement_1217-2503.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upp{
+    transform: translateY(-40%);
+    z-index: 2;
+    background-color: white;
+     margin: 20px;
+}
+.car img{
+    z-index: 1;
+    transition-behavior: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all
+}
+.text-center{
+    border: none;
+}
+.car img:hover{
+    transform: scale(1.1);
+}
+.five{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+.five img{
+    width: 680px;
+}
+.six{
+    position: relative;
+z-index: 1;
+}
+.sev{
+    background-color: white;
+    position: absolute;
+    transform: translateY(-40%);
+    margin: 20px;
+    z-index: 2;
+    text-align: center;
+    padding: 15px;
+
+}
+.six img:hover{
+    transform: scale(1.1);
+}
+.foot{
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+li{
+    list-style: none;
+}
+.mage img{
+width: 440px;
+border-radius: 20px;
+}
