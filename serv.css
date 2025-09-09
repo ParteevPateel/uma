@@ -1,0 +1,119 @@
+.flip-card{
+    border-radius: 15px;
+    background-color: rgb(149, 12, 154);
+    margin: 10px;
+    /* padding: 10px; */
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;   
+    /* flex: 1; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+}
+.flip-card h1{
+    color: rgb(233, 230, 230);
+}
+.flip-card-inner{
+    position: relative;
+    text-align: center;
+     width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform .6s;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+     width: 300px;
+    height: 200px;
+     border-radius: 15px;
+}
+.flip-card-front{
+    flex: 1;
+    align-content: center;
+}
+.flip-card-back{
+    transform: rotateY(180deg);
+    align-content: center;
+    background-color: rgb(190, 190, 12);
+    font-weight: 500;
+}
+.jus{
+    margin: 0;
+    justify-content: center;
+}
+.flips-card{
+    background-color: rgba(68, 61, 61, 0.772);
+    border-radius: 50%;
+    width: 350px ;
+    height: 260px;
+    perspective: 1000px;
+    margin: 10px;
+}
+.flips-card-inner{
+    position: relative;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.flips-card:hover .flips-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flips-card-front, .flips-card-back{
+    position: absolute;
+    backface-visibility:hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.flips-card-front{
+    color:rgb(245, 236, 236);
+    flex:1;
+    align-content: center;
+}
+.flips-card-back{
+    background-color: brown;
+    transform: rotateY(180deg);
+    align-content: center;
+    color:rgb(245, 236, 236);
+}
+.foot{
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+li{
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

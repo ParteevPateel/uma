@@ -28,18 +28,22 @@
 .text-center{
     border: none;
 }
+.car img{
+    transition: transform 0.5s ease-in-out;
+}
 .car img:hover{
     transform: scale(1.1);
 }
-.five{
+/* .five{
     clear: both;
     display: flex;
     justify-content: space-between;
 }
 .five img{
-    width: 680px;
+    width: 605px;
+    border-radius: 10px;
 }
-.six{
+.five{
     position: relative;
 z-index: 1;
 }
@@ -55,7 +59,7 @@ z-index: 1;
 }
 .six img:hover{
     transform: scale(1.1);
-}
+} */
 .foot{
     line-height: 35px;
     font-size: 20px;
@@ -65,7 +69,39 @@ z-index: 1;
 li{
     list-style: none;
 }
+.bgaa{
+    /* background-image: linear-gradient(to bottom, rgba(254, 157, 1, 0.89), rgba(254, 157, 1, 0.1)); */
+    background-image: url(https://previews.123rf.com/images/geargodz/geargodz1306/geargodz130600093/20323803-white-wooden-wall-texture-background-block-style.jpg);
+    background-size: cover;
+}
 .mage img{
-width: 440px;
+width: 360px;
 border-radius: 20px;
+align-content: space-between;
+}
+.abc{
+    text-align: center;
+    padding-right: 50px;
+    font-weight: 700;
+    color:black;
+    opacity: 0;
+    transition: transform 1s ease-in-out ;
+}
+.abc a{
+    color:black;
+    text-decoration: none;
+}
+.ver img{
+    transition: transform 1s;
+}
+.ver img:hover{
+   opacity: 0.3;
+   transform: scale(1.2);
+}
+.ver:hover .abc{
+     opacity:1;
+    transform: translateY(-120px);
+}
+ i{
+    font-size: 30px;
 }

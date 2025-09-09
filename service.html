@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="serv.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-info sticky-top ">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand ">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBUQEBIVFRAXEBcWFxcVGBIXEhUXFxUXFhUVFhUYHSggGBolGxYVITEiJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGhAQGi4dHx8tKysrKystLS0rLS0tLS0tLSstLS0rLS0tLSstLS0tLS02LS0tLS0tLS0tLS03LTc3Lf/AABEIANUA7AMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcBBAUCAwj/xABJEAACAQICBQgGBgYHCQAAAAABAgADEQQFBhIhMYEHEyJBUWFxkRQyQnKhsSNUgpOi0RdSYsHC0hYlU2OSsrMVJDM0Q3Oj0+H/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAlEQEAAgICAgICAwEBAAAAAAAAAQIDERIhMVEEQSIyI0JxgRP/2gAMAwEAAhEDEQA/ALwiIgIiICIiAiIgIiICeGnueWgYERaLQERaLQETFotAzERAzE8k9Z3fCalXNsMnrV6S+NRB8zDum7E5y57gzuxVD72n+c26OLpv6lRG91lPyMGpfaJi8zeHC8XiIC8Xi0WgeoiICIiAiIgIi8XgIiICIiAiIgIiICYJhjK/000yKk4fCt0hseoOo/qp39p6uruRG0qUm06hIc/0sw2F6LHXq/qJtI947l47e6QTNNPMZVNqerRTsXpPxc/uAkWY3Nzv7d57zJHodow2LfXe4wytZj1uw9hPDrPVu37rYpENcYqUjcubh8Pi8Y9hzlZr72LMF8WY2WSnAcm9Q7a1ZUPYi6x/xGwliYXCpTUJTUKo3BQAPKfaQ5Sptnt/XpAKnJpTt0cQ4PeikfAicbMOT3F09tIpVHd0G8m2fGWxEcpRjNf7lRxx+OwzahqV6TD2SzgcFOwidbLtPsbTI5zUrL16wCPbudLDzWWZm+UUcShSsgYdR9pT2qeoyntJMjqYSsUbahuUfqYfuYdYk62iepaKWpk6mO1x5TmCYiilZPVdbi+8doPeDsm7IvydH+r6fv1f9V5KJXaNTMMl41aYIiJxElaaT47NaeIq82awoa/QKrdNWw3EKdm/fLLididJ0txnxtSh0rx+70mp+H8pj+leP+sv+H8paOkOjlDFIQygVLdFwBrA9Vz1i/VKZxNBqbtTcWZWKkdhBsZZXUteK1L/AE6v9K8f9Zf8P5R/SvH/AFl/w/lONElqFvCvp2f6V4/6zU/D+U2MJneaVTalVruf2Re3jYbJHpc2g70zgaJpgAatmt+uDZie8nbxkbahVlmtI3pt6M8/6LT9J1uesdbWtrX1ja9u606kRKmGeyIiAiIgIiYMCK6fZ8cPQ5umbVqlwD1qvtN+4f8AyVLO7ptmHPY2ob3VDza9lk3/AItacKW1jp6GGnGrdyfLKmJqrQpesx2nqVbjWbhLtyzBJQpJRpiyIoUcOs9p65A+SrA9KriD1Wprx6TfwSx5G9vpn+ReZtx9EREgzkTXxmMp0l1qrqi9rEAfGcDF6d4FDYOzn9hWt5mwndOxWZ8Qk84WmOXCvg6qhQ1RUL09m0OouLdl93GcV+UnDdVGqfHmx/EZ1dG9KaeNZ0Sk6aigktq22m1th7oiJjtPhev5a8NXkxJ/2ZSJ62qnzquRJZPjh8OlNdVFCrtNgAALm52eJM+wi07tMo2nczJEROIkREDErHlMyjUqrilHRqdF+5xuPFflLPnOz/LFxOHei2zWXYexhtU+c7E6lPHfjbai4nuvSZGKOLOrEEdhBsR5zxLnpEnHJlm2pUbCsei/ST3wOkOIF/syDz64TENTqLUQ2dWDDxBvOTG4QyV5V0/QAiaWT49cRRSsnqsgPgesHvBuOE3ZS80iIgIiICeKz2Ut2Any2z3Phjh9E4/u2/ymBQVSoWJY7ybnxO0zEwJmXvU+ltcm1K2AU/rVKhPBtX+GSuRjk6P9X0+56n+ox/eJI8RWVFLuQFVSSTsAAG0mUz5edf8AeSvWVFLuwVQLkk2AHeZXekfKAxJp4MWG7nWFyfcU7vE+U4mluk74tyqkrhweiu4t+035dUj9OmWIVQSxNgBvJOwAcbSda+2jHgiO7PeJxD1G16jM7nrYlm+MkGTaE4uuA7AUqZ3F76x7wm/ztJhohocmHAq1wGxG+2wrT7h2t3+UlWJZwhNNQz22AnVBPUCbG3lOTb05fP8AVUOwnJxhhtq1ajnu1EU/An4yTZPk9DDKUoIFBNydpZj2knaZGM10sx+FAbEYFFpltUMtfWXW6gbJcbjOf+kx/qq/en+SJrZCaZbx7hZESuP0mP8AVV+9P8kleV4/G1CDVwqUkO8mtdx9kJ8yJHUq7Y7V8u5ECJxAiIgJgzMQKw5TMn1Kq4pB0anRfucDYeIH4ZCZemfZauIw70W9pdh7GG1TwNpR1eiyMyMLMrEEdhBsRLaTuG7BfddT9PEREkvT3kwzezPhGOw9On4+2o4WNu4yxxKCwOLajUSqnrIwYcOo9x3S9MsxqVqSVk9V1DDjvB7wdkqvHbD8imrbbUREioIiICYcXFpmYMCgsdhzTqvSO9KjL5EifCS/lIyg0sR6Qo+jqjaexwLHzG3zkQl0T09KlotWJWfyXYoNhnp9aVb27mAI+IacrlF0h1m9EpN0FP0pHW28J4Dee+3ZIpk+cVsMzNRaxdCp47iO8dXGaDEk3JuSbkneT1mciO9q/wDx1ebEsrk90a1FGLrD6Rh9GD7Cn2vEjyHiZF9Cci9KxF3H0NOzP2MfZTj8gZcSrYTl5+kM+T+sMxEStkRblHX/AHB+6rSP/lWVHLg5Qh/V9T3qf+qkp+W0/Vt+N+rYy1A1amp3GqgPFgJfglDZP/zFH/v0/wDOJfUjdX8nzBERIMxERAREQBEq/lMyfm6oxSjo1Nj26nA2HiB+HvloTnZ9li4nDvRb2l2H9VhtVuBAnYnUp478bbUXE916LIxRxZlYgjsINiPhPEuekSweS/N/Xwjn9un/ABr8j/ilfTZyzGtRrJWT1kYHxHWvEXHGcmNq8leVdL7BmZrYDFpVprVQ3VlDDwIvNmUvOIiICIiBo5xllPEUWo1B0WG/rB6mHeDKYzzJ6uFqmlVHerD1XXqYfl1S9TIjyktSGDPOKC5cCn2hjtJB90G8lWe12HJNba9qomCZmAevvlreujQ7Khh8IiEdNum/vN1cBYcJ3ZBdHtP6TKExfQfdrgEo3eQNqn4SX4fMaLqGSqjKdxDKR85TMTt5t62i07bcTVq4+iu1qqKO9lHzM4Ga6c4OkLI/PP1CltXjU9Ued+6IrM+IcrW1p1EPjylYxVwfN36VSooA7lYOT4bAOMqmdDO82q4qqatU7bWVR6qLe+qPz65z5bEajTfipwrp98va1ameyqh8mEv6fn2gekPeHzn6CkLs/wAnzBERIMxERAREQEwRMxArDlMyfUqjFKOjU6L9zgbDxA/CZCZeue5auIw70W9pdh7GG1T5yja9JkZkYWZWKkdhBsflLaTtuwX5Rqfp4iIkl6xuTDN7q2Ec7Vu6e6T0hwJB4mT+ULlWPfD1krJvRr27RuI4i4l5YDFJVprVQ3R1DDwIvKrQw56atv22IiJFQREQBlT8pGac7ihRU9Citvtmxb4ao4GWVnWYLQoVKzbkQm3adyjibCUVWql2LsbsxLE9pJufjJ0jto+PTc7eZPdGtB6NfCpVrNUV3uw1Cost+ibFTe4F9vbIhkmXHEYinQHtNtPYo2sfIGXnRpBVCqLAAADqAGwCStaY8LPkZJjqFeYzk2cbaOIBHZUXpH7aWA/wzi4jQHHjfRpP7rqfLXC2lwWi05GW0Ko+ReFNU9A8dfZh0G3eWoj4rczq4Lk5xTf8arSpj9gNUNvE6oB4GWjaamaYeo9Jko1TRqEbKgVWK7Rt1W2HZccZ2c1pJ+ReVfaUaJYXCYNqil3ra6AM7kXu41rItl9XW6pBpZuY6EYnEEGvmDvq7lNNQo2WvqqwF++aLcmjdWJX7o/+yS5Rruy6mWsR+U7QXBprVEXtqKPNgJf4Mrg8mb7vSl+6P887+S6OYygUDZjUeknsGnTsR2Fmu1uMjbjP2rzWrfxPhKYmFmZUzEREBERAREQMGQnSrQlsTX56gyIWHTDX2sNzCwPVv8JN55ckDYLm07E6draazuFY/o3xP9rS/H+UyOTfEf21L8f5TpVeUhVJU4ZgwJBBddhGwjdPH6S1+rH7wfyyf5NO8zR/RtiP7an5PJroplVXC4cUKjh7OxUrewVrG23v1pFzylj6sfvB/LPrguUdHqIj0dRGYAtr31b7Lkau6cnlKN4y2juE8iYUzMgzkGJ869QKpZjZQCSTuAG0mBX/ACo5p6mFU/3j/JB8z5Svpu5zmBxGIqVj7b3A7FGxRwAE18Hhmq1FpILu7BR4k28uvwl0RqHo46xSiwOS7KbK+KYbWPNp4A9MjxNh9mWBNTLMGtGklFPVRAo77bz4k7ZtyqZ3LBe3K2yIicRIiIC0xaZiBi0zaIgIiICIiAiIgIiICYaZiJFScouVcziudUdCsNbwcev57DxMisuXTbKfSMIwUXqJ007bjeOIuPKU1LazuG/BflXXomJmJJcuTQfNfSMGhY3dPo27braxPiLGSGVVyaZnzeJNFj0aq7PfXaPMX8hLUEptGpedlrxsyZD+UnNeawvMqenWNvBBYueOwcTJe0pjTXNPSMY7A3RPo08FPSPFr/CdrG5dw05W/wAcKTfkxynXqtiWHRp9FPfYbTwU2+1ISiEkAC5JsB1kncJeGjmWDDYanRG8Ldu9jtY+Z+Ak7z00576rr26kREqYSIiAiIgIiICIiAiIgIiICIiAiIgIiIGGEpnTXKfR8WwUfRv9InZY+svA/C0ueRblByjn8KXUfSUruO0r7a+W3xUSVZ1K3DfjZUcREteg+mFrtTdaibGVgw8QbiXvleMWtRSsnqugbwuNo4bpQksnkvzTWpPhmPSQ66+6x2+Tf5pC8M3yKbjl6SDTDNvRsK7g/SEaie83XwFzwlLSX8pWZ85iRQU9Cku332AJ8hYeciE7SOksFeNd+0r5Osp57FCqw+jpDW7i59QfM8BLZAnA0Jyn0fCICLVH+kftuw2A+AsOEkErtO5Zct+ViIicVkREBERAREQEREBERAREQEREBERAREQE8uLz1ECktLMp9FxT0gOgTrp7jE2HA3HCceWnylZVzmHFdR06Rue9D63kbHzlWS6s7h6GG3KpN3J8zqYaqK1K2sARt3EEWsR5HhNKJ1ZMbe61VnZnY3ZmLEneSTcmdfQ7K/SMXTQi6L037NVdw4tYcTOLLU5Ncq5rDmsw6dU3HuD1fMknykbTqFeW3GqXqJ6iJU88iIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHzxFEOpRhdWUgjtBFiJRWc5ecPXqUG9l7DvXep4giXwZXvKjlWxMUo3Hm38DtQnjccRJUnUr8F9W17V7ETEtbnQyLLWxGIp0R7TdI9ijax8v3S8qFMKoVRZQAAOwDcJBuS/K9VHxTDa/QT3B6xHi2z7MnsqtO5YM9t216IiJFSREQEREBERAREQEREBERAREQEREBERAREQEREBNPN8Ctei9F/VdSL9h6mHeDY8JuTBgfn/E4dqbtTcWZWKsOwg2M94DCNWqpRT13YKO653+AFz4CSzlMyvUrri
+        FHRqCzdzqP3rbyM2eTDKdZ3xTDYo1E947XPAWH2jLeXW2+cn8fJYGX4VaVJKSDoooUeAFvObMwBMypgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIEc0/oK2X1iQLonOL4qb/K44zb0Vwy08JRRR/wBJWPezAMx8zESc/p/1Pf8AHH+uxERIIEREBERAREQEREBERAREQERED//Z"
+          alt="logo" class="rounded-pill" style="width: 60px;"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a href="bootstrap.html" class="nav-link">Home</a></li>
+        <li class="nav-item"> <a href="service.html" class="nav-link">Service</a></li>
+        <li class="nav-item"> <a href="#work" class="nav-link">Work</a></li>
+        <li class="nav-item"> <a href="#contact" class="nav-link ">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid dfg">
+    <div class=" qwe row justify-content-center ">
+      <div class="col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+             MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BCA</h1>
+            </div>
+            <div class="flip-card-back">
+             MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>MCA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BCA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>MCA</h1>
+            </div>
+            <div class="flip-card-back">
+              An MBA (Master of Business Administration) is a postgraduate degree theoretical and
+              practical training  leadership and management skills for various industries
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+             MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BCA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>MCA</h1>
+            </div>
+            <div class="flip-card-back">
+               MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+               MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6  col-lg-4 col-xl-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>BBA</h1>
+            </div>
+            <div class="flip-card-back">
+              MCA (Master of Computer Applications) is a two-year postgraduate degree program focused on computer science, software development, and IT infrastructure
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container-fluid bg-light">
+    <div class="row jus">
+      <h1 style="text-align: center;">TALLY</h1>
+      <div class="col-sm-12 col-md-6  col-lg-6 col-xl-4">
+        <div class="flips-card">
+          <div class="flips-card-inner">
+            <div class="flips-card-front">
+              <h1>TALLY ESSENTIAL</h1>
+            </div>
+            <div class="flips-card-back">
+              <p>LEVEL 1</p>
+              <P>LEVEL 2</P>
+              <P>LEVEL 3</P>
+              <P>COMPREHENSIVE</P>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6  col-lg-6 col-xl-4">
+        <div class="flips-card">
+          <div class="flips-card-inner">
+            <div class="flips-card-front">
+              <h1>TALLY ESSENTIAL</h1>
+            </div>
+            <div class="flips-card-back">
+              <p>LEVEL 1</p>
+              <P>LEVEL 2</P>
+              <P>LEVEL 3</P>
+              <P>COMPREHENSIVE</P>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6  col-lg-6 col-xl-4">
+        <div class="flips-card">
+          <div class="flips-card-inner">
+            <div class="flips-card-front">
+              <h1>TALLY ESSENTIAL</h1>
+            </div>
+            <div class="flips-card-back">
+              <p>LEVEL 1</p>
+              <P>LEVEL 2</P>
+              <P>LEVEL 3</P>
+              <P>COMPREHENSIVE</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-fluid mt-5">
+    <div class="row row-cols-3 g-5 foot" style="background-color: rgba(143, 79, 202, 0.651);">
+      <div class="col mt-5 mb-5 ">
+        <h1 class="text-uppercase mb-4">V Tech Solutions</h1>
+
+        <p>
+          Stay connected with V Tech Solutions through subscription, where we share the latest industry insights,
+          course updates, and exclusive opportunities to help you advance your career and stay ahead in the
+          ever-evolving
+          tech landscape.
+        </p>
+      </div>
+      <div class="col mt-5 mb-5">
+        <h1>CONTACT US</h1>
+        <p>
+        <p><i class="bi bi-geo-alt-fill"></i> Eshwar Building, 3rd Cross, Ashoka Nagar, Tumkur-572103</p>
+        <p><i class="bi bi-envelope"></i> V-tech@gmail.com</p>
+        <p><i class="bi bi-telephone"></i> 97531256875</p>
+        </p>
+      </div>
+      <div class="col mt-5 mb-5 ">
+        <h1 class="text-uppercase mb-4">courses</h1>
+        <ul>
+          <li>JAIN Online</li>
+          <li>WLP</li>
+          <li>ODL</li>
+          <li>Uttaranchal</li>
+          <li>Mizoram</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
